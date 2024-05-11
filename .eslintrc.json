@@ -1,0 +1,28 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "unused-imports", "simple-import-sort", "import"],
+  "extends": ["plugin:@typescript-eslint/recommended", "eslint-config-prettier"],
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "never" }],
+    "semi-spacing": ["error", { "after": true, "before": false }],
+    "semi-style": ["error", "first"],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  }
+}
